@@ -1,0 +1,35 @@
+.main_page {
+  min-height: 100vh;
+  background-color: #ebecec;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 39px;
+  padding: 48px;
+}
+.cards_section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  width: 100%;
+}
+
+
+.box_contact {
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .section {
+    gap: 0;
+    padding: 0;
+  }
+
+  .cards_section {
+    width: 100%;
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+}

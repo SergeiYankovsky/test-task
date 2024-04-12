@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="desktop_button"
+>
+  <button
+    className="button button_default"
+    onClick={[Function]}
+  >
+    NEUER EINTRAG
+  </button>
+</div>
+`;

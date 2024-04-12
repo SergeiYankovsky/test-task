@@ -1,0 +1,19 @@
+.mobile_button {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .desktop_button {
+    display: none;
+  }
+  .mobile_button {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+  .plus {
+    color: white;
+    font-size: 42px;
+  }
+}

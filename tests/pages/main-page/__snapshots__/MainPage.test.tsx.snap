@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main
+  className="main_page"
+>
+  <header
+    className="header"
+  >
+    <h1
+      className="title"
+    >
+      ADDRESSBUCH
+    </h1>
+  </header>
+  <section
+    className="section"
+  >
+    <div
+      className="desktop_button"
+    >
+      <button
+        className="button button_default"
+        onClick={[Function]}
+      >
+        NEUER EINTRAG
+      </button>
+    </div>
+    <div
+      className="mobile_button"
+    >
+      <button
+        className="button button_default_mobile"
+        onClick={[Function]}
+      >
+        <p
+          className="plus"
+        >
+          +
+        </p>
+      </button>
+    </div>
+    <div
+      className="cards_section"
+    />
+  </section>
+</main>
+`;
