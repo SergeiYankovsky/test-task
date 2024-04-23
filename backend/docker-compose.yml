@@ -1,16 +1,10 @@
-version: "3.8"
+version: '3.5'
 
 services:
-  frontend:
-    container_name: frontend
+  app:
     build:
-      dockerfile: ./frontend/DockerFile
-    ports:
-      - "8080:80"
-
-  backend:
-    build:
-      dockerfile: ./backend/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     container_name: backend
     environment:
       - DB_HOST=${DB_HOST}
@@ -26,8 +20,8 @@ services:
     depends_on:
       - postgres
     volumes:
-      - .:/usr/src/app/backend
-      - /usr/src/app/backend/node_modules
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
     command: npm run start:prod
     networks:
       - app-net
@@ -36,7 +30,7 @@ services:
     image: postgres:alpine
     restart: always
     shm_size: 128mb
-    container_name: postgres
+    container_name: postgres 
     environment:
       POSTGRES_DB: ${DB_NAME}
       POSTGRES_USER: ${DB_USERNAME}

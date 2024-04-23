@@ -1,0 +1,55 @@
+.button {
+  max-height: 32px;
+  padding: 5px 11px;
+  border: none;
+
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &_default {
+    border: 1px solid #008a64;
+    background-color: #008a64;
+    color: #ffffff;
+  }
+
+  &_primary {
+    border: 1px solid #707070;
+    background-color: #ebecec;
+    color: #707070;
+  }
+
+  &_secondary {
+    border: none;
+    background: none;
+    color: #fc2020;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.button_default_mobile {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 60px;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 1px solid #008a64;
+  border-radius: 50%;
+  background-color: #008a64;
+  color: white;
+  font-size: 42px;
+}
